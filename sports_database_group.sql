@@ -3,7 +3,7 @@ create database sports;
 use sports;
 
 /*hola*/
-/*hola 2*/
+/*ola ke ase*/
 
 create table participant (
 dni char(9) not null,
