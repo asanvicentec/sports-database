@@ -2,6 +2,8 @@ drop database if exists sports;
 create database sports;
 use sports;
 
+/*hola*/
+
 create table participant (
 dni char(9) not null,
 nationality varchar(30) not null,
