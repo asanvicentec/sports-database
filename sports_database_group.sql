@@ -19,6 +19,7 @@ create table participant (
 	type set("Coach","Player","Referee") not null,
 	is_active set("Yes","No") not null,
 	back_number tinyint,
+	lifetime_score mediumint,
 	primary key(dni)
 );
 
@@ -226,14 +227,16 @@ INSERT INTO participant_play_game (dni, id_game) VALUES ('99999999D', 2);
 
 # ------------ show all tables ------------
 /*
-select * from competition;
+select * from participant;
+select * from participant_have_team;
 select * from game;
 select * from injury;
 select * from penalty;
 select * from sport;
 select * from team;
+select * from competition;
 */
-
+/*
 
 		  The End
 ⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
